@@ -7,13 +7,14 @@
 </head>
 <body onload="writetext()" bgcolor="#000000" text="#00FF00">
 <center>
-<script language="JavaScript">
+<script>
 msg = new Array(); 
-msg[0] = "<h2><font size=30><font face='Courier' color='#00FF00'> >> @DeadlyZap << </font></font><br><font color='#00FF00' size=30>================================= <font face='Courier' color='#00FF00'><br>Hacked by DeadlyZap</u></font></font></h2>";
-msg[1] = "<b> what??! <font face='Courier' color='#00FF00'> yes you are hacked !</font>";
-msg[2] = "<b> Channel : <font face='Courier' color='#00FF00'> <a href='https://t.me/DeadlyZap' style='color:#00FF00;'>DeadlyZap</a></font>";
-msg[3] = "<b> Hey Admin, <font face='Courier' color='#00FF00'> YOU ARE DEAD..yes i know...</font>";
-msg[4] = "<b> This Isn't A Joke <font face='Courier' color='#00FF00'> It's Real...in hell only satan can save you!</font><br><br><font color='#00FF00' size=30>================================= ";
+msg[0] = "<h2><font size=30 face='Courier' color='#00FF00'>&gt;&gt; @DeadlyZap &lt;&lt;</font><br><font size=30 color='#00FF00'>=================================</font><br><font face='Courier' color='#00FF00'>Hacked by DeadlyZap</font></h2>";
+msg[1] = "<b><font face='Courier' color='#00FF00'>what??! yes you are hacked !</font></b>";
+msg[2] = "<b><font face='Courier' color='#00FF00'>Channel : <a href='https://t.me/DeadlyZap' style='color:#00FF00;'>DeadlyZap</a></font></b>";
+msg[3] = "<b><font face='Courier' color='#00FF00'>Hey Admin, YOU ARE DEAD..yes i know...</font></b>";
+msg[4] = "<b><font face='Courier' color='#00FF00'>This Isn't A Joke It's Real...in hell only satan can save you!</font></b>";
+msg[5] = "<h2><font size=30 face='Courier' color='#00FF00'>=================================</font></h2>";
 
 text1 = ""; 
 text2 = ""; 
@@ -27,21 +28,20 @@ function writetext() {
     document.getElementById("nothing").innerHTML = text1; 
     if (count < text.length - 1) {
         count++;
-        setTimeout('writetext()', 25);
+        setTimeout(writetext, 25);
     } else { 
         count = 0;
-        if (count2 != 4) { 
+        if (count2 != 5) { 
             count2++;
             text2 += "<p>"; 
             text = msg[count2].split(""); 
-            setTimeout('writetext()', 25);
+            setTimeout(writetext, 25);
         }
     }
 }
 </script>
 <script>alert("Hacked By DeadlyZap");</script>
 <div id="nothing" style="font-family: 'Courier';"></div>
-
 </center>
 </body>
 </html>
